@@ -1,0 +1,9 @@
+from typing import List
+count=0
+def printNos(x: int) -> List[int]: 
+    global count
+    if count == x:
+        return []
+    count+=1
+    return [count]+printNos(x)
+
