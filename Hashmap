@@ -1,0 +1,11 @@
+from collections import defaultdict
+def hashh(n,arr):
+    hash = defaultdict(int)
+    for i in arr:
+        hash[i] +=1
+    print(hash)
+    
+if __name__ == "__main__":
+     n = input("Enter the number \n")
+     arr = [int(x) for x in input().split()]
+     hashh(n,arr)
